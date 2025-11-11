@@ -47,12 +47,12 @@ namespace Game1
             if (guessedNumber == randomNumber)
             {
                 score += 10;
-                SaveScoreToDatabase(score); // gọi hàm lưu DB
+                SaveScoreToDatabase(score);
 
                 lbl.Text = $"Chính xác! Số đúng là {randomNumber}";
                 panelIn4.BackColor = Color.LightGreen;
 
-                ResetRound(); // bắt đầu vòng mới
+                ResetRound();
             }
             else
             {
@@ -126,9 +126,5 @@ namespace Game1
             }
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
